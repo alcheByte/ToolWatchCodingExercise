@@ -7,9 +7,11 @@ namespace TW.DeveloperTest.WorkLibrary
     public class SampleWorker : IWorker
     {
         readonly Random _random;
+        private ILogger _Logger;
 
-        public SampleWorker()
+        public SampleWorker(ILogger logger)
         {
+            _Logger = logger;
             _random = new Random();
         }
 
@@ -19,8 +21,9 @@ namespace TW.DeveloperTest.WorkLibrary
 
             if (result <= 95)
             {
-                //TODO Log to logging library successes
-                return RandomString(result);
+                var output = RandomString(result);
+                _Logger.Log(LogLevel.Info, "SampleWorker.GetResult", output);
+                return output;
             }
 
             throw new Exception($"Out of range exception - {result} > 95");

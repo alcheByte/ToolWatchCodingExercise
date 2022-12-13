@@ -9,6 +9,7 @@ namespace TW.DeveloperTest.ConsoleApp
         static void Main(string[] args)
         {
             bool run = true;
+            ILogger logger = Ioc.Resolve<ILogger>();
             IWorker worker = Ioc.Resolve<IWorker>();
 
             do
@@ -28,13 +29,11 @@ namespace TW.DeveloperTest.ConsoleApp
                 {
                     var result = worker.GetResult();
 
-                    //TODO replace with logging library
-                    Console.WriteLine($"output - {result}");
+                    logger.Log(LogLevel.Debug, "Program.Main", $"output - {result}");
                 }
                 catch (Exception e)
                 {
-                    //TODO replace with logging library
-                    Console.WriteLine($"error - {e.Message}");
+                    logger.LogException(e, "Program.Main");
                 }
                 
                 Thread.Sleep(500);
