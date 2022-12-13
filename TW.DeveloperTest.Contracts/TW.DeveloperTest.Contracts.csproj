@@ -42,6 +42,7 @@
   <ItemGroup>
     <Compile Include="ILogger.cs" />
     <Compile Include="IWorker.cs" />
+    <Compile Include="LogEntry.cs" />
     <Compile Include="LogLevel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

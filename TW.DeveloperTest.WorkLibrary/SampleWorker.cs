@@ -22,7 +22,10 @@ namespace TW.DeveloperTest.WorkLibrary
             if (result <= 95)
             {
                 var output = RandomString(result);
-                _Logger.Log(LogLevel.Info, "SampleWorker.GetResult", output);
+                if(result < 10)
+                    _Logger.Log(LogLevel.Warning, "SampleWorker.GetResult", output);
+                else
+                    _Logger.Log(LogLevel.Info, "SampleWorker.GetResult", output);
                 return output;
             }
 

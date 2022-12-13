@@ -10,5 +10,6 @@ namespace TW.DeveloperTest.Contracts
     {
         void Log(LogLevel level, string tag, string message);
         void LogException(Exception e, string tag);
+        LogEntry GetLastLogEntry();
     }
 }

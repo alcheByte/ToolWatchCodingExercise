@@ -42,5 +42,10 @@ namespace TW.DeveloperTest.WorkLibrary
         {
             Log(LogLevel.Error, tag, e.Message);
         }
+
+        public LogEntry GetLastLogEntry()
+        {
+            return null;
+        }
     }
 }

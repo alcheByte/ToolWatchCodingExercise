@@ -1,13 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33122.133
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TW.DeveloperTest.Console", "TW.DeveloperTest.Console\TW.DeveloperTest.Console.csproj", "{59E2D45D-88FF-4A0B-BE40-6EF320EBC0B5}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TW.DeveloperTest.WorkLibrary", "TW.DeveloperTest.WorkLibrary\TW.DeveloperTest.WorkLibrary.csproj", "{7C1A2041-9DAA-4C11-A02F-01E1440C778C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TW.DeveloperTest.Contracts", "TW.DeveloperTest.Contracts\TW.DeveloperTest.Contracts.csproj", "{D9A0EDFB-B5D1-49F9-9F61-11F146C68F0A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TW.DeveloperTest.Tests", "TW.DevelopersTest.Tests\TW.DeveloperTest.Tests.csproj", "{276963B7-CD54-4B44-BE78-41959CFADF2D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,8 +29,15 @@ Global
 		{D9A0EDFB-B5D1-49F9-9F61-11F146C68F0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D9A0EDFB-B5D1-49F9-9F61-11F146C68F0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D9A0EDFB-B5D1-49F9-9F61-11F146C68F0A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{276963B7-CD54-4B44-BE78-41959CFADF2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{276963B7-CD54-4B44-BE78-41959CFADF2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{276963B7-CD54-4B44-BE78-41959CFADF2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{276963B7-CD54-4B44-BE78-41959CFADF2D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {37DAA45E-7186-42E9-AC23-25A63F8EDA75}
 	EndGlobalSection
 EndGlobal
