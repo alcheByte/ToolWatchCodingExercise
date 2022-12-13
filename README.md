@@ -8,11 +8,11 @@ Included below are the instructions for the ToolWatch C# code exercise.  We're g
 
 The logging library should consist of:
 
-1) A simple interface to define the essential behavior of a log
+1) A simple interface to define the essential behavior of a log (ILogger)
 
-2) At least one concrete implementation that facilitates testing, and a suite of tests that assert the correct behavior of the library
+2) At least one concrete implementation that facilitates testing, and a suite of tests that assert the correct behavior of the library (TestableLogger)
 
-3) At least one concrete instance that is suitable for use in production
+3) At least one concrete instance that is suitable for use in production (ConsoleLogger)
 
 4) Support for segmenting logs by level (e.g. Debug, Information, Warning, etc.)
 
@@ -27,8 +27,10 @@ If you have additional time, think of how we can solve for additional use cases:
 1) How could we protect against sensetive information being accidently written to the logs?
 
 2) How could our library encourage us to store our logs in a way to make them more searchable?
+Answer- By saving discrete data that we wish to search on or adding metadata, depending on datastore.
 
 3) How could we support different retention policies for logs based on log level?
+Answer- Saving the log level as a searchable data field would facilitate having a periodic process find and delete entries fitting the retiention policy for the associated log level. 
 
 ## Think about future maintainers
 
